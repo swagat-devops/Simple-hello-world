@@ -10,4 +10,4 @@ spec:
       image: swagatdevops/hello:latest
       imagePullPolicy: Always
       ports: 
-        - containerPort: 8081
+        - containerPort: 8080
