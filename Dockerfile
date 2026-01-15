@@ -6,7 +6,7 @@ COPY src ./src
 RUN mvn clean package -DskipTests
 
 
-FROM openjdk:17-alpine 
+FROM eclipse-temurin:17-jre-alpine
 WORKDIR /app
 COPY --from=builder /build/target/*.jar hello.jar
 EXPOSE 8081
