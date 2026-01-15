@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  - name: testser
+
+spec:
+  type: NodePort
+  selector: 
+    app: testpod
+  ports:
+    - port: 8080
+      targetPort: 8080
+      nodePort: 30081
