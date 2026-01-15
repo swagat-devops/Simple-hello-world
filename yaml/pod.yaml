@@ -3,11 +3,11 @@ kind: Pod
 metadata:
   name: testpod
 spec:
-imagePullSecrets:
+  imagePullSecrets:
     - name: regcred
-containers:
+  containers:
     - name: payal
       image: swagatdevops/hello:latest
       imagePullPolicy: Always
       ports: 
-        - containersPort:8080
+        - containerPort: 8080
